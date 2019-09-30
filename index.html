@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Average Calculator</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header align="center">
+            <h1>Average Calculator</h1>
+        </header>
+
+        <main class="container-fluid">
+            <div class="row justify-content-sm-center">
+                    <div class="col-sm-3">
+                        <div class="md-form">
+                            <input id="first" type="number" class="form-control">
+                            <label for="first">First Number: </label>
+                        </div>
+                        <div class="md-form">
+                            <input id="second" type="number" class="form-control">
+                            <label for="second">Second Number: </label>
+                        </div>
+                        <div class="md-form">
+                            <input id="third" type="number" class="form-control">
+                            <label for="third">Third Number: </label>
+                        </div>
+                        <label>Average: <span id="average">0</span></label>
+                    </div>
+                    <div class="col-sm-3">
+                        <button id="calculate-button" class="btn">Calculate</button>
+                    </div>
+            </div>
+        </main>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+        <!--Custom Scripts-->
+        <script src="calculator.js"></script>
+    </body>
+</html>
