@@ -1,11 +1,12 @@
 function calculate(){
-    const firstNum = document.getElementById("first").value;
-    const secondNum = document.getElementById("second").value;
-    const thirdNum = document.getElementById("third").value;
+    const r = document.getElementById("radius").value;
+    const a = calculateRadius(r);
+    document.getElementById("area").innerHTML = String(a.toFixed(2));
+}
 
-    const avg = (Number(firstNum) + Number(secondNum) + Number(thirdNum)) / 3;
-
-    document.getElementById("average").innerHTML = String(avg.toFixed(2));
+function calculateRadius(radius){
+    const area = Math.PI * (Number(radius) * Number(radius))
+    return area;
 }
 
 document.getElementById("calculate-button").addEventListener("click", calculate);
